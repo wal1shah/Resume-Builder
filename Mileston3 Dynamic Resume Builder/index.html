@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+
+
+</head>
+<body>
+    <!-- Resume Form -->
+    <header><h1> Dynamic <span>Resume</span> Builder </h1> 
+    <h2 class="form-text">Generate your Resume</h2></header>
+
+    <div class="main-container">
+        <div class="form-container">
+        <form>
+            <div class="personal-info">
+                <h2>Personal Information</h2>
+                    <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" placeholder="Enter your name">
+                <label for="profileImage">Profile Image</label>
+    <input type="file" id="profileImage" accept="image/*">
+                <label for="profile-summary">Profile Summary</label>
+              <textarea name="profile-summary" id="profile-summary" placeholder="Write a professional bio"></textarea>
+                
+         <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+             <label for="address">Address</label>
+            <input type="text" id="address" placeholder="Enter your address">
+        </div>
+        <div class="education">
+            <h2>Education</h2>
+            <label for="education">Education</label>
+            <input type="text" id="education" placeholder="Add your Education">
+            <button class="add-btn" id="addBtn1" type="button">+</button>
+        </div>
+        <div class="skills">
+            <h2>Skills</h2>
+            <label for="skills">Skills</label>
+            <input type="text" id="skills" placeholder="Add your Skills">
+            <button class="add-btn" id="addBtn2" type="button">+</button>
+        </div>
+        <div class="work-exp">
+            <h2>Work Experience</h2>
+            <label for="workExp">Work Experience</label>
+            <input type="text" id="workExp" placeholder="Add your Work Experience">
+            <button class="add-btn" id="addBtn3" type="button">+</button>
+            <button class="generate-btn" id="generateBtn" type="button">Generate</button>
+        </div>
+        </form>
+    </div>
+
+    <!-- Generated Resume -->
+     <div class="resume-container">
+    <h2 class="resume-text">Generated Resume</h2>
+    <div class="resume-card">
+        <div class="content-container" id="resumeContent">
+          <!-- Profile Section -->
+          <div class="profile-section">
+            <img class = "profile-img"src="profileP.png" alt="Profile Picture" id="printedImg" />
+            <h2 class="profile-name" id="generatedName">Wali Shah</h2>
+          </div>
+  
+          <!-- Profile Summary -->
+          <div class="summary-section">
+            <h3>Profile Summary:</h3>
+            <p id="profSumm">
+              Motivated technology enthusiast with a passion for cloud computing
+              and generative AI, currently pursuing a Certified Cloud Applied
+              Generative AI Engineering certificate from Governor House Karachi.
+              Possess a strong foundation in web application development, with a
+              focus on building scalable, high-performance solutions.
+            </p>
+          </div>
+  
+          <!-- Personal Information -->
+          <div class="personal-info-section">
+            <h3>Personal Information:</h3>
+            <ul>
+              <li>Name: <span id="generatedName2">Wali Shah</span></li>
+              <li>Email: <span id="">syedkshahbukhari@gmail.com</span></li>
+              <li>Address: <span id="generatedAddress">Gulshan e Iqbal</span></li>
+            </ul>
+          </div>
+          <!-- Education -->
+          <div class="education-section">
+            <h3>Education:</h3>
+            <ul id="generatedEdu">
+              <li>Bachelor of Arts</li>
+              <li>Intermediate in Engineering</li>
+              <li>Matric in Science</li>
+            </ul>
+          </div>
+  
+          <!-- Skills Section -->
+          <div class="skills-section">
+            <h3>Skills:</h3>
+            
+            <ul id="generatedSkills">
+              <li>Node.js</li>
+              <li>React.js</li>
+              <li>Typescript</li>
+              <li>Python</li>
+              <li>Adobe Photoshop</li>
+              <li>Adobe Illustrator</li>
+              <li>Canva</li>
+            </ul>
+          </div>
+  
+          <!-- Work Experience -->
+          <div class="work-experience-section">
+            <h3>Work Experience:</h3>
+            <ul id="generatedWE">
+              <li>Fresh</li>
+            </ul>
+  
+      </div>
+    </div>
+    </div>
+    <footer>
+        <div class="credit"><span> Developed by:</span> <h3>Syed Ali Kazim Shah</h3></div>
+      <div class="social">
+        <p class="footer-p">Connect with me on</p>
+        <a class="social-links" href="https://www.linkedin.com/in/syedakshah/">LinkedIn</a>
+        <a class="social-links" href="https://github.com/wal1shah">GitHub</a>
+      </div>
+      </footer>
+    
+      <script src="script.js"></script>
+    
+</body>
+</html>
