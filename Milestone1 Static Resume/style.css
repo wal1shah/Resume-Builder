@@ -1,0 +1,160 @@
+body {
+    background-image: url(bgpattern.png);
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    line-height: 20px;
+    overflow: auto;
+}
+/* Header & Footer */
+header, footer{
+    text-align: center;
+    color: white;
+    line-height: 10px;
+    margin: 40px;
+}
+footer h3{
+   color: rgb(212,175,55);
+   display: inline;
+   font-size: 24px;
+   font-weight: 700;
+}
+.social{
+    margin-top: 30px;
+}
+.footer-p{
+    font-size: 14px;
+}
+.social-links{
+    color: blue;
+}
+
+/* Main Content */
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+    font-style: bold;
+    color: white;
+    line-height: 60px;
+}
+
+span {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 0;
+    margin: 50px
+}
+
+.resume-card {
+    width: 100%;
+    max-width: 700px;
+    height: 80%;
+    padding: 0px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 55px auto;
+}
+
+/* Profile content */
+.profile-img {
+    width: 120px;
+    border-radius: 50%;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.profile-name {
+    margin-left: 40px;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+#techSkills, #gdSkills {
+    display: none;
+}
+
+/* Arrow buttons and dropdown */
+.arrow {
+    box-sizing: border-box;
+    height: 12px;
+    width: 12px;
+    border-style: solid;
+    border-color: rgb(134, 104, 2);
+    border-width: 0px 2px 2px 0px;
+    transform: rotate(45deg);
+    transition: border-width 150ms ease-in-out;
+    cursor: pointer;
+}
+
+.arrow.up {
+    transform: rotate(225deg);
+}
+
+.arrow:hover {
+    border-bottom-width: 4px;
+    border-right-width: 4px;
+}
+
+.toggle-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 0%;
+}
+
+.dropdown-content {
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 768px){
+    h1{
+        font-size: 40px;
+        line-height: 40px
+    }
+   .content-container{
+    font-size: 20px;
+    line-height: 22px;
+    margin: 0px 20px
+   }
+   .resume-card{
+    margin-top: 0px;
+   }
+
+   .profile-section{
+    margin: 0 8px;
+   }
+
+   .profile-name{
+    font-size: 34px;
+    
+   }
+   span{
+    font-size: 20px;
+   }
+   .credit{
+    /* font-size: 60px; */
+    display: inline;
+    padding: 0px;
+   }
+   .credit h3{
+    font-size: 20px;
+   }
+   .credit span{
+    font-size: 12px;
+   }
+   .social-links{
+    font-size: 10px;
+   }
+}
+

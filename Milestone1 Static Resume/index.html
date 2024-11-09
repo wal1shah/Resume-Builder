@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Static Resume Builder</title>
+  </head>
+  <body>
+    <header>
+      <h1>Static Interactive <br> Resume Builder </h1>
+       
+    </header>
+
+    <div class="resume-card">
+      <div class="content-container">
+        <!-- Profile Section -->
+        <div class="profile-section">
+          <img src="profileP.png" alt="Profile Picture" class="profile-img" />
+          <h2 class="profile-name">Wali Shah</h2>
+        </div>
+
+        <!-- Profile Summary -->
+        <div class="summary-section">
+          <h3>Profile Summary:</h3>
+          <p>
+            Motivated technology enthusiast with a passion for cloud computing
+            and generative AI, currently pursuing a Certified Cloud Applied
+            Generative AI Engineering certificate from Governor House Karachi.
+            Possess a strong foundation in web application development, with a
+            focus on building scalable, high-performance solutions.
+          </p>
+        </div>
+
+        <!-- Personal Information -->
+        <div class="personal-info-section">
+          <h3>Personal Information:</h3>
+          <ul>
+            <li>Name: <span>Wali Shah</span></li>
+            <li>Email: <span>syedkshahbukhari@gmail.com</span></li>
+            <li>Address: <span>Gulshan e Iqbal</span></li>
+          </ul>
+        </div>
+
+        <!-- Education -->
+        <div class="education-section">
+          <h3>Education:</h3>
+          <ul>
+            <li>Bachelor of Arts</li>
+            <li>Intermediate in Engineering</li>
+            <li>Matric in Science</li>
+          </ul>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="skills-section">
+          <h3>Skills:</h3>
+
+          <!-- Technology Skills -->
+          <div class="toggle-btn" id="toggleTechSkills">
+            <ol><li><span>Technology</span></li></ol>
+            <div class="arrow" id="arrowTech"></div>
+          </div>
+          <ul class="dropdown-content" id="techSkills">
+            <li>Node.js</li>
+            <li>React.js</li>
+            <li>Typescript</li>
+            <li>Python</li>
+          </ul>
+
+          <!-- Graphic Design Skills -->
+          <div class="toggle-btn" id="toggleDesignSkills">
+          <ol> <li> <span>Graphic Design</span></li>
+        </ol>
+            <div class="arrow" id="arrowDesign"></div>
+          </div>
+          <ul class="dropdown-content" id="gdSkills">
+            <li>Adobe Photoshop</li>
+            <li>Adobe Illustrator</li>
+            <li>Canva</li>
+          </ul>
+        </div>
+
+        <!-- Work Experience -->
+        <div class="work-experience-section">
+          <h3>Work Experience:</h3>
+          <ul>
+            <li>Fresh</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <footer>
+      <div class="credit"><span> Developed by:</span> <h3>Syed Ali Kazim Shah</h3></div>
+    <div class="social">
+      <p class="footer-p">Connect with me on</p>
+      <a class="social-links" href="https://www.linkedin.com/in/syedakshah/">LinkedIn</a>
+      <a class="social-links" href="https://github.com/wal1shah">GitHub</a>
+    </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+

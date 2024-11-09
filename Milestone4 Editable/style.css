@@ -1,0 +1,279 @@
+body{
+    background-image: url(bgpattern.png);
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+}
+header h1{
+    color: white;
+    text-align: center;
+    font-size: 60px;
+}
+h2{
+    text-align: center;
+    color:rgb(212,175,55) ;
+    margin: 20px;
+}
+header .form-text{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+header span{
+    font-size: 60px;
+    color: rgb(212,175,55);
+}
+
+ span {
+    font-size: 15px;
+    font-weight: bold;
+}
+.add-btn{
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(212,175,55);
+    border: 2px solid rgb(212,175,55);
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.add-btn:hover{
+    background-color: rgb(212,175,55);
+    color: white;
+}
+.resume-text{
+   position: relative;
+   top: 80px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    
+}
+
+.form-container{
+    background-color: white;
+    width: 40%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+form{
+    /* display: block; */
+    margin: 20px;
+    font-family:  "Space Grotesk", sans-serif;
+}
+
+
+label{
+    display: block;
+    margin-top: 12px;
+    font-weight: 500;
+}
+input, textarea{
+    width: 300px;
+    height: 30px;
+    padding: 5px;
+    border: 2px solid gray;
+    border-radius: 4px;
+    font-family:  "Space Grotesk", sans-serif;
+}
+#profileImage{
+    height: 20px;
+    font-family: "Space Grotesk", sans-serif;
+}
+.add-btn{
+    display: block;
+    margin: 10px auto;
+}
+.generate-btn{
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: rgb(212,175,55);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    display: block;
+    margin: 40px auto 10px auto;
+    padding: 8px 16px;
+}
+.generate-btn:hover{
+    background-color: white;
+    color: rgb(212,175,55);
+    border: 2px solid rgb(212,175,55);
+    border-radius: 6px;
+}
+.edit-btn{
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: rgb(212,175,55);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    display: block;
+    margin: 10px auto;
+    padding: 8px 16px;
+}
+
+.edit-btn:hover{
+    background-color: white;
+    color: rgb(212,175,55);
+    border: 2px solid rgb(212,175,55);
+    border-radius: 6px;
+}
+
+
+.education, .skills{
+    margin-top: 30px;
+}
+
+/* generated resume styling */
+
+.social{
+    margin-top: 30px;
+}
+.footer-p{
+    font-size: 14px;
+}
+.social-links{
+    color: blue;
+}
+
+/* Main Content */
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+    font-style: bold;
+    color: white;
+    line-height: 60px;
+}
+
+span {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 40px 20px 40px 10px;
+    margin: 50px;
+    width: 100%;
+    /* max-width: 800px Adjust the max width as needed */
+    box-sizing: border-box;
+    background-color: white; /* Ensure background is white for the PDF */
+    
+}
+
+
+.resume-card {
+    width: 100%;
+    max-width: 700px;
+    height: 80%;
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+/* Profile content */
+.profile-img {
+    width: 120px;
+    border-radius: 50%;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.profile-name {
+    margin-left: 40px;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+footer h3{
+    color: rgb(212,175,55);
+    display: inline;
+    font-size: 24px;
+    font-weight: 700;
+ }
+ .social{
+     text-align: center;
+ }
+ .footer-p, .credit>span{
+     font-size: 14px;
+     color: white;
+     margin: 10px;
+    
+ }
+ .credit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+ }
+ .social-links{
+     color: blue;
+ }
+
+
+@media only screen and (max-width: 768px){
+/* form section */
+.form-container{
+    width: 320px;
+}
+
+    /* Resume section */
+    .resume-text{
+        position: relative;
+        top: 14px;
+        text-align: center;
+
+    }
+    .resume-container h1{
+        font-size: 20px;
+        line-height: 40px
+    }
+   .resume-container .content-container{
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0px 20px
+   }
+   .resume-container .resume-card{
+    margin-top: 0px;
+   }
+
+   
+
+   .resume-container .profile-name{
+    font-size: 30px;
+    
+   }
+   .resume-container span{
+    font-size: 16px;
+   }
+   .credit{
+    /* font-size: 60px; */
+    /* display: inline; */
+    padding: 0px;
+   }
+   .credit h3{
+    font-size: 20px;
+   }
+   .credit span{
+    font-size: 12px;
+   }
+   .social-links{
+    font-size: 10px;
+   }
+}
